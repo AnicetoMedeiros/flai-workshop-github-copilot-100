@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 :root {
-  --dos-green: #00ff00;
-  --dos-green-dim: #00aa00;
-  --dos-green-bright: #88ff88;
-  --dos-bg: #000000;
-  --dos-panel-bg: #001a00;
-  --dos-border: #00ff00;
-  --dos-cursor: #00ff00;
+  --dos-green: #cccccc;
+  --dos-green-dim: #888888;
+  --dos-green-bright: #eeeeee;
+  --dos-bg: #0a0a0a;
+  --dos-panel-bg: #1a1a1a;
+  --dos-border: #cccccc;
+  --dos-cursor: #cccccc;
 }
 
 * {
@@ -44,7 +44,7 @@ body {
   margin: 0 auto;
   animation: flicker 8s infinite;
   /* CRT phosphor glow */
-  text-shadow: 0 0 6px var(--dos-green);
+  text-shadow: none;
 }
 
 /* CRT scanlines overlay */
@@ -164,7 +164,7 @@ section h3::after {
   margin-bottom: 12px;
   padding: 10px 12px;
   border: 1px solid var(--dos-green-dim);
-  background-color: #000800;
+  background-color: #0d0d0d;
   position: relative;
 }
 
@@ -278,24 +278,24 @@ section h3::after {
   width: 100%;
   padding: 6px 10px;
   border: 1px solid var(--dos-green);
-  background-color: #000e00;
+  background-color: #111111;
   color: var(--dos-green);
   font-family: inherit;
   font-size: 0.9rem;
   outline: none;
   caret-color: var(--dos-cursor);
-  text-shadow: 0 0 4px var(--dos-green);
+  text-shadow: none;
 }
 
 .form-group input:focus,
 .form-group select:focus {
   border-color: var(--dos-green-bright);
   box-shadow: 0 0 6px var(--dos-green);
-  background-color: #001400;
+  background-color: #1e1e1e;
 }
 
 .form-group select option {
-  background-color: #000e00;
+  background-color: #111111;
   color: var(--dos-green);
 }
 
@@ -337,15 +337,15 @@ button[type='submit']:hover {
 }
 
 .success {
-  background-color: #001a00;
-  color: #00ff44;
-  border-color: #00ff44;
-  text-shadow: 0 0 4px #00ff44;
+  background-color: #1a1a1a;
+  color: #cccccc;
+  border-color: #888888;
+  text-shadow: none;
 }
 
 .success::before {
   content: 'OK> ';
-  color: #00ff44;
+  color: #cccccc;
 }
 
 .error {
